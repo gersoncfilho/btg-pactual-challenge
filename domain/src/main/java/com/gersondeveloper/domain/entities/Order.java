@@ -5,6 +5,7 @@ import java.util.List;
 public class Order {
     //I could use Lombok here, but I will prefer to define all manually
     //to keep a simple plain pojo class without dependencies
+    private int orderId;
     private int OrderCode;
     private int ClientCode;
     private List<Item> itemList;
@@ -16,6 +17,14 @@ public class Order {
     }
 
     public Order(){}
+
+    public int getOrderId() {
+        return orderId;
+    }
+
+    public void setOrderId(int orderId) {
+        this.orderId = orderId;
+    }
 
     public int getOrderCode() {
         return OrderCode;
